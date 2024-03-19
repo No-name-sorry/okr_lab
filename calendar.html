@@ -9,47 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,
     300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Formula 1 - Calendar</title>
 
-    <style>
-        body {
-            background: #8dcece;
-            font-family: 'Titillium Web', sans-serif;
-        }
-        ul{
-            list-style-type: none;
-            text-align: center;
-        }
-        ul a{
-            text-decoration: none;
-        }
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-        h1{
-            text-align: center;
-            font-weight: 700
-        }
-        table{
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-        }
-        caption{
-            font-weight: 700
-        }
-        th, td {
-            height: 40px;
-            width: 220px;
-            text-align: center;
-        }
-        tr:nth-child(odd) {
-            background-color: #d9d9d9;
-        }
-    </style>
 </head>
 <body>
   <h1>Calendar</h1>
@@ -61,144 +24,144 @@
       <li><a href="https://www.formula1.com" style="color: blue;">Official Formula 1 website</a></li>
   </ul>
 
-  <p>Formula 1 has announced the calendar for the 2024 FIA Formula One World Championship, approved by the World Motor Sport Council.
+  <p class="simple-p">Formula 1 has announced the calendar for the 2024 FIA Formula One World Championship, approved by the World Motor Sport Council.
       The calendar features 24 races and begins in Bahrain on March 2 and finishes in Abu Dhabi on December 8.</p>
-  <p>By moving Japan to April, Azerbaijan to September and Qatar back-to-back with Abu Dhabi, this calendar creates a better
+  <p class="simple-p">By moving Japan to April, Azerbaijan to September and Qatar back-to-back with Abu Dhabi, this calendar creates a better
       flow of races in certain regions, and this work will continue while being realistic to the fact that as a world championship,
       with climatic and contractual constraints, there will always be travel required that cannot be completely regionalised.</p>
-  <p>For the opening two races of the season in Bahrain and Saudi Arabia, the Grand Prix will take place on a Saturday. This decision
+  <p class="simple-p">For the opening two races of the season in Bahrain and Saudi Arabia, the Grand Prix will take place on a Saturday. This decision
       has been taken because of Ramadan.</p>
 
-  <table align="center">
+    <table class="calendar-table"> <!-- cellpadding="8"-->
       <caption>2024 F1 calendar</caption>
       <thead>
       <tr>
-          <th>Date</th>
-          <th>Grand Prix</th>
-          <th>Venue</th>
+          <th class="calendar-table-head">Date</th>
+          <th class="calendar-table-head">Grand Prix</th>
+          <th class="calendar-table-head">Venue</th>
       </tr>
       </thead>
 
       <tbody>
-      <tr>
+      <tr class="calendar-table-head">
           <td>February 29 – March 2</td>
           <td>Bahrain</td>
           <td>Sakhir</td>
       </tr>
       <tr>
-          <td>March 7-9	</td>
-          <td>Saudi Arabia</td>
-          <td>Jeddah</td>
+          <td class="calendar-table-head">March 7-9	</td>
+          <td class="calendar-table-head">Saudi Arabia</td>
+          <td class="calendar-table-head">Jeddah</td>
       </tr>
       <tr>
-          <td>March 22-24</td>
-          <td>Australia</td>
-          <td>Melbourne</td>
+          <td class="calendar-table-head">March 22-24</td>
+          <td class="calendar-table-head">Australia</td>
+          <td class="calendar-table-head">Melbourne</td>
       </tr>
       <tr>
-          <td>April 5-7</td>
-          <td>Japan</td>
-          <td>Suzuka</td>
+          <td class="calendar-table-head">April 5-7</td>
+          <td class="calendar-table-head">Japan</td>
+          <td class="calendar-table-head">Suzuka</td>
       </tr>
       <tr>
-          <td>April 19-21</td>
-          <td>China</td>
-          <td>Shanghai</td>
+          <td class="calendar-table-head">April 19-21</td>
+          <td class="calendar-table-head">China</td>
+          <td class="calendar-table-head">Shanghai</td>
       </tr>
       <tr>
-          <td>May 3-5</td>
-          <td>Miami</td>
-          <td>Miami</td>
+          <td class="calendar-table-head">May 3-5</td>
+          <td class="calendar-table-head">Miami</td>
+          <td class="calendar-table-head">Miami</td>
       </tr>
       <tr>
-          <td>May 17-19</td>
-          <td>Emilia Romagna</td>
-          <td>Imola</td>
+          <td class="calendar-table-head">May 17-19</td>
+          <td class="calendar-table-head">Emilia Romagna</td>
+          <td class="calendar-table-head">Imola</td>
       </tr>
       <tr>
-          <td>May 24-26</td>
-          <td>Monaco</td>
-          <td>Monaco</td>
+          <td class="calendar-table-head">May 24-26</td>
+          <td class="calendar-table-head">Monaco</td>
+          <td class="calendar-table-head">Monaco</td>
       </tr>
       <tr>
-          <td>June 7-9</td>
-          <td>Canada</td>
-          <td>Montreal</td>
+          <td class="calendar-table-head">June 7-9</td>
+          <td class="calendar-table-head">Canada</td>
+          <td class="calendar-table-head">Montreal</td>
       </tr>
       <tr>
-          <td>June 21-23</td>
-          <td>Spain</td>
-          <td>Barcelona</td>
+          <td class="calendar-table-head">June 21-23</td>
+          <td class="calendar-table-head">Spain</td>
+          <td class="calendar-table-head">Barcelona</td>
       </tr>
       <tr>
-          <td>June 28-30</td>
-          <td>Austria</td>
-          <td>Spielberg</td>
+          <td class="calendar-table-head">June 28-30</td>
+          <td class="calendar-table-head">Austria</td>
+          <td class="calendar-table-head">Spielberg</td>
       </tr>
       <tr>
-          <td>July 5-7</td>
-          <td>United Kingdom</td>
-          <td>Silverstone</td>
+          <td class="calendar-table-head">July 5-7</td>
+          <td class="calendar-table-head">United Kingdom</td>
+          <td class="calendar-table-head">Silverstone</td>
       </tr>
       <tr>
-          <td>July 19-21</td>
-          <td>Hungary</td>
-          <td>Budapest</td>
+          <td class="calendar-table-head">July 19-21</td>
+          <td class="calendar-table-head">Hungary</td>
+          <td class="calendar-table-head">Budapest</td>
       </tr>
       <tr>
-          <td>July 26-28</td>
-          <td>Belgium</td>
-          <td>SPA</td>
+          <td class="calendar-table-head">July 26-28</td>
+          <td class="calendar-table-head">Belgium</td>
+          <td class="calendar-table-head">SPA</td>
       </tr>
       <tr>
-          <td>August 23-25</td>
-          <td>Netherlands</td>
-          <td>Zandvoort</td>
+          <td class="calendar-table-head">August 23-25</td>
+          <td class="calendar-table-head">Netherlands</td>
+          <td class="calendar-table-head">Zandvoort</td>
       </tr>
       <tr>
-          <td>August 30 – September 1</td>
-          <td>Italy</td>
-          <td>Monza</td>
+          <td class="calendar-table-head">August 30 – September 1</td>
+          <td class="calendar-table-head">Italy</td>
+          <td class="calendar-table-head">Monza</td>
       </tr>
       <tr>
-          <td>September 13-15</td>
-          <td>Azerbaijan</td>
-          <td>Baku</td>
+          <td class="calendar-table-head">September 13-15</td>
+          <td class="calendar-table-head">Azerbaijan</td>
+          <td class="calendar-table-head">Baku</td>
       </tr>
       <tr>
-          <td>September 20-22</td>
-          <td>Singapore</td>
-          <td>Singapore</td>
+          <td class="calendar-table-head">September 20-22</td>
+          <td class="calendar-table-head">Singapore</td>
+          <td class="calendar-table-head">Singapore</td>
       </tr>
       <tr>
-          <td>October 18-20</td>
-          <td>USA</td>
-          <td>Austin</td>
+          <td class="calendar-table-head">October 18-20</td>
+          <td class="calendar-table-head">USA</td>
+          <td class="calendar-table-head">Austin</td>
       </tr>
       <tr>
-          <td>October 25-27</td>
-          <td>Mexico</td>
-          <td>Mexico City</td>
+          <td class="calendar-table-head">October 25-27</td>
+          <td class="calendar-table-head">Mexico</td>
+          <td class="calendar-table-head">Mexico City</td>
       </tr>
       <tr>
-          <td>November 1-3</td>
-          <td>Brazil</td>
-          <td>Sao Paulo</td>
+          <td class="calendar-table-head">November 1-3</td>
+          <td class="calendar-table-head">Brazil</td>
+          <td class="calendar-table-head">Sao Paulo</td>
       </tr>
       <tr>
-          <td>November 21-23</td>
-          <td>Las Vegas</td>
-          <td>Las Vegas</td>
+          <td class="calendar-table-head">November 21-23</td>
+          <td class="calendar-table-head">Las Vegas</td>
+          <td class="calendar-table-head">Las Vegas</td>
       </tr>
       <tr>
-          <td>November 29 – December 1</td>
-          <td>Qatar</td>
-          <td>Lusail</td>
+          <td class="calendar-table-head">November 29 – December 1</td>
+          <td class="calendar-table-head">Qatar</td>
+          <td class="calendar-table-head">Lusail</td>
       </tr>
       <tr>
-          <td>December 6-8</td>
-          <td>Abu Dhabi</td>
-          <td>Yas Marina</td>
+          <td class="calendar-table-head">December 6-8</td>
+          <td class="calendar-table-head">Abu Dhabi</td>
+          <td class="calendar-table-head">Yas Marina</td>
       </tr>
       </tbody>
   </table>

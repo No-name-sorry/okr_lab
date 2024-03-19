@@ -8,28 +8,40 @@ h1{
     text-align: center;
     font-weight: 700
 }
+
 .italic-p {
     font-style: italic;
     text-align: center;
 }
+
 ul{
     list-style-type: none;
     text-align: center;
+    font-size: larger;
 }
-ul a{
+
+a{
     text-decoration: none;
 }
+
 ul li {
     display: inline;
     margin-right: 20px;
 }
+
+.nav_a{
+    color: darkred;!important;
+}
+
 img{
     display: block;
     margin: 0 auto;
 }
+
 caption{
     font-weight: 700
 }
+
 .calendar-table{
     background-color: white;
     border: 1px solid black;
@@ -38,24 +50,27 @@ caption{
     margin-left: auto;
     margin-right: auto;
 }
+
 .calendar-table-head{
     height: 40px;
     width: 220px;
     border-radius: 10px;
 }
-tr:nth-child(odd) {
-    background-color: #d9d9d9;
-}
+
 .calendar-table.th{
     border-radius: 10px;
 }
-.simple-p{
-    text-align: start;
-}
 
+#1, #2, #3{
+    text-align: right;
+}
 .driver_table{
     border: 1px solid black;
     background: white;
     margin-left: auto;
     margin-right: auto;
 }
+
+/*.simple-p{*/
+/*    text-align: start;*/
+/*}*/

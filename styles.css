@@ -24,13 +24,25 @@ a{
     text-decoration: none;
 }
 
-ul li {
+ul li {                         /*контекстний*/
     display: inline;
     margin-right: 20px;
 }
 
-.nav_a{
-    color: darkred;!important;
+.nav a{                        /*контекстний*/
+    color: darkred;
+    font-weight: 700
+}
+
+tr > th, td{                   /*дочірній*/
+    height: 40px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+h2 + p {                       /*cусідній*/
+    text-align: start;
+    font-weight: 400
 }
 
 img{
@@ -51,19 +63,16 @@ caption{
     margin-right: auto;
 }
 
-.calendar-table-head{
-    height: 40px;
-    width: 220px;
-    border-radius: 10px;
-}
+/*.calendar-table-head{*/
+/*    height: 40px;*/
+/*    width: 220px;*/
+/*    border-radius: 10px;*/
+/*}*/
 
-.calendar-table.th{
-    border-radius: 10px;
-}
+/*.calendar-table.th{*/
+/*    border-radius: 10px;*/
+/*}*/
 
-#1, #2, #3{
-    text-align: right;
-}
 .driver_table{
     border: 1px solid black;
     background: white;

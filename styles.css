@@ -15,6 +15,7 @@ h1{
 }
 
 ul{
+    position: sticky;
     list-style-type: none;
     text-align: center;
     font-size: larger;
@@ -24,6 +25,7 @@ a {
     text-decoration: none;
 }
 
+nav
 
 ul li {                         /*контекстний*/
     display: inline;

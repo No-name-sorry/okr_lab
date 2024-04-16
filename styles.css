@@ -14,33 +14,89 @@ h1{
     text-align: center;
 }
 
+.main-img{                      /*div*/
+    position: fixed;
+    /*float: left;*/
+}
+
+span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
 ul{
-    position: sticky;
     list-style-type: none;
     text-align: center;
     font-size: larger;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-nav
+.nav-list{                      /*div*/
+    position: sticky;
+    top: 0;
+    background: #8dcece;
+}
 
 ul li {                         /*контекстний*/
     display: inline;
     margin-right: 20px;
 }
 
-.nav a{                        /*контекстний*/
+.nav a{                         /*контекстний*/
     color: darkred;
-    font-weight: 700
+    font-weight: 700;
+    border-bottom: 1px solid transparent; /* Рамка прозора за замовчуванням */
+    transition: border-color 0.3s, opacity 0.3s; /* Плавна анімація зміни рамки та прозорості */
+}
+
+.nav a:hover {
+    color: #1818d3;             /* Колір при наведенні курсору */
+    border-color: #007bff;      /* Колір рамки при наведенні курсору */
+    opacity: 0.5;
+
+}
+
+.nav a::after {
+    content: " >"; /* Додає символ ">" після кожного посилання */
+}
+
+ul .nav:last-child a::after {
+    content: ""; /* Видаляє символ ">" після останнього посилання */
+}
+
+.nav a:active {
+    color: #f84c4c;             /* Колір при активному натисканні */
+}
+
+ol li a:link {
+    color: blue;                /* Колір посилань, які ще не були відвідані */
+}
+
+ol li a:visited {
+    color: purple;              /* Колір посилань, які вже були відвідані */
+    text-decoration: line-through; /* Перекреслення для відвіданих посилань */
+}
+
+.container {
+    overflow: hidden;            /* Закриває контейнер навколо внутрішніх елементів */
+}
+
+.span-guide {
+    float: left;                /* Вирівнює елемент зліва */
+    margin-right: 32px;         /* Додатковий відступ праворуч для розділення від списку */
 }
 
 tr > th, td{                   /*дочірній*/
     height: 40px;
     width: 220px;
     border-radius: 10px;
+}
+
+.calendar-text p:first-child {
+    font-weight: bold;         /* Застосовуємо жирний шрифт до першого елемента <p> */
 }
 
 h2 + p {                       /*cусідній*/

@@ -8,7 +8,6 @@ function compareStrings(str1, str2) {
         alert("Рядки рівні між собою.");
     }
 }
-
 function storeLocation(){
     location.href = "https://f1store.formula1.com/en/";
 }
@@ -37,14 +36,15 @@ function userDialog() {
 // document.body.style.backgroundColor = "white";
 // // Затримка на 30 секунд
 // setTimeout(function() {
-//     // Повернення фону сторінки до початкового кольору через 30 секунд
+//     // Повернення фону сторінки через 30 секунд
 //     document.body.style.backgroundColor = "";
 // }, 30000);
 
 // Створення нового елемента
-var newHeading = document.createElement('h2');
+var newHeading = document.createElement('h1');
 // Створення текстового вузла
 var headingText = document.createTextNode('Welcome!');
+console.log(headingText.nodeValue);
 // Додавання текстового вузла до нового елемента
 newHeading.appendChild(headingText);
 
@@ -65,6 +65,8 @@ newParagraph.appendChild(paragraphText);
 
 // Додавання нового абзацу після контейнера
 var container = document.getElementById('3');
+container.innerHTML = "<p>New paragraph</p>";
+console.log(container.outerHTML); // Виведе HTML-код елемента
 container.after(newParagraph);
 
 // Видалення попереднього абзацу
@@ -76,8 +78,9 @@ p_color[0].style.color = "red";
 
 // Додавання нового елемента попереду контейнера
 var newDiv = document.createElement('div');
-var divText = document.createTextNode('Guide page');
-newDiv.appendChild(divText);
+newDiv.textContent = "Guide page";
+// var divText = document.createTextNode('Guide page');
+// newDiv.appendChild(divText);
 document.body.prepend(newDiv);
 
 ///////////////////////////////////////////////////////

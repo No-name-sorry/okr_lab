@@ -15,10 +15,10 @@
 
 <body>
     <h1>Welcome to the Formula 1 page!</h1>
-    <a href="img/logo.png" target="_blank"> <!-- Повний розмір відкриється у новому вікні -->
+    <button class="dialog-button" onclick="showDialogs()">Open dialogs</button>
+    <a class="f1-logo" href="img/logo.png" target="_blank"> <!-- Повний розмір відкриється у новому вікні -->
         <img src="img/logo.png" alt = "logo f1" height="70" width="160">
     </a>
-
     <div class="nav-list">
         <ul>
             <li class="nav"><a href="index.html">Main page</a></li>
@@ -36,5 +36,27 @@
             <img src="img/main_cars.jpg" height="486" width="864"/>
         </a>
     </div>
+    <button class="shop-button" onclick="storeLocation()">Fan Shop</button>
+<!--    <button class="shop-button" ></button>-->
+    <script src="script.js"></script>
+
+    <script>
+        function showDialogs() {
+            alert("Вітаємо на сайті!");
+
+            var userName = prompt("Введіть ваше ім'я:", "Ім'я користувача");
+            if(userName)
+                alert("Привіт, " + userName + "!");
+            else
+                alert("Привіт, безіменний!")
+
+            var result = confirm("Натисніть 'OK', якщо вам подобається ця сторінка.");
+            if (result) {
+                alert("Дякуємо за ваш відгук!");
+            } else {
+                alert("Шкода, що вам не подобається(((");
+            }
+        }
+    </script>
 </body>
 </html>

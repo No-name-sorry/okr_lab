@@ -8,16 +8,39 @@ h1{
     text-align: center;
     font-weight: 700
 }
+ /*.dialog-button{*/
+ /*    color: white;*/
+ /*    background-color: darkred;*/
+ /*    float: inherit;*/
+
+ /*}*/
+
+button {
+    padding: 10px 20px; /* Додати відступи в середині кнопки */
+    font-size: 16px; /* Збільшити розмір шрифту */
+    float: inherit;
+    /*display: inline-block; !* Зробити кнопку блочним елементом *!*/
+    text-align: center; /* Вирівняти текст по центру */
+    cursor: pointer; /* Змінити курсор на покажчик при наведенні */
+    border: none; /* Видалити рамку */
+    background-color: darkred; /* Колір фону кнопки */
+    color: #fff; /* Колір тексту */
+    border-radius: 5px; /* Закруглити кути кнопки */
+}
+
+button:hover {
+    background-color: #0056b3; /* Змінити колір фону кнопки при наведенні */
+}
 
 .italic-p {
     font-style: italic;
     text-align: center;
 }
 
-.main-img{                      /*div*/
-    position: fixed;
-    /*float: left;*/
-}
+/*.main-img{                      !*div*!*/
+/*    position: fixed;*/
+/*    !*float: left;*!*/
+/*}*/
 
 span{
     font-size: 20px;
@@ -64,7 +87,7 @@ ul li {                         /*контекстний*/
 }
 
 ul .nav:last-child a::after {
-    content: ""; /* Видаляє символ ">" після останнього посилання */
+    content: " "; /* Видаляє символ ">" після останнього посилання */
 }
 
 .nav a:active {

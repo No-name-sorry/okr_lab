@@ -14,13 +14,14 @@
 </head>
 
 <body>
-    <h1>Welcome to the Formula 1 page!</h1>
-    <button class="dialog-button" onclick="showDialogs()">Open dialogs</button>
-    <a class="f1-logo" href="img/logo.png" target="_blank"> <!-- Повний розмір відкриється у новому вікні -->
+    <h1>Welcome to the Formula 1 website!</h1>
+    <button id="dialog-button" onclick="showDialogs()">Open dialogs</button>
+    <div id="message" style="display: none; position: absolute; background-color: yellow; padding: 10px;"></div>
+    <a class="f1-logo" href="img/logo.png" target="_blank">
         <img src="img/logo.png" alt = "logo f1" height="70" width="160">
     </a>
     <div class="nav-list">
-        <ul>
+        <ul id="navList">
             <li class="nav"><a href="index.html">Main page</a></li>
             <li class="nav"><a href="drivers.html">Drivers and Teams</a></li>
             <li class="nav"><a href="calendar.html">Calendar and Results</a></li>
@@ -36,11 +37,16 @@
             <img src="img/main_cars.jpg" height="486" width="864"/>
         </a>
     </div>
-    <button class="shop-button" onclick="storeLocation()">Fan Shop</button>
-<!--    <button class="shop-button" ></button>-->
+<!--    <button id ="shop-button">Fan Shop</button>-->
+    <div id="menu">
+        <button class="menu-button" data-action="shop">Go FanShop</button>
+        <button class="menu-button" data-action="youtube">YouTube F1</button>
+        <button class="menu-button" data-action="F1">Official F1 page</button>
+    </div>
     <script src="script.js"></script>
 
     <script>
+        // document.write("<h2>Have a nice day!</h2>");
         function showDialogs() {
             alert("Вітаємо на сайті!");
 

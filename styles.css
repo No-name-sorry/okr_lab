@@ -75,12 +75,12 @@ ul li {                         /*контекстний*/
     transition: border-color 0.3s, opacity 0.3s; /* Плавна анімація зміни рамки та прозорості */
 }
 
-.nav a:hover {
-    color: #1818d3;             /* Колір при наведенні курсору */
-    border-color: #007bff;      /* Колір рамки при наведенні курсору */
-    opacity: 0.5;
+/*.nav a:hover {*/
+/*    color: #1818d3;             !* Колір при наведенні курсору *!*/
+/*    border-color: #007bff;      !* Колір рамки при наведенні курсору *!*/
+/*    opacity: 0.5;*/
 
-}
+/*}*/
 
 .nav a::after {
     content: " >"; /* Додає символ ">" після кожного посилання */
@@ -90,12 +90,18 @@ ul .nav:last-child a::after {
     content: " "; /* Видаляє символ ">" після останнього посилання */
 }
 
-.nav a:active {
-    color: #f84c4c;             /* Колір при активному натисканні */
-}
+/*.nav a:active {*/
+/*    color: #f84c4c;             !* Колір при активному натисканні *!*/
+/*}*/
 
 ol li a:link {
     color: blue;                /* Колір посилань, які ще не були відвідані */
+}
+
+/*7*/
+ol li {
+    cursor: pointer;
+    padding: 5px;
 }
 
 ol li a:visited {
@@ -108,7 +114,7 @@ ol li a:visited {
 }
 
 .span-guide {
-    float: left;                /* Вирівнює елемент зліва */
+    /*float: left;                !* Вирівнює елемент зліва *!*/
     margin-right: 32px;         /* Додатковий відступ праворуч для розділення від списку */
 }
 
@@ -162,6 +168,13 @@ caption{
     margin-right: auto;
 }
 
-/*.simple-p{*/
-/*    text-align: start;*/
-/*}*/
+.menu-button {
+    margin: 12px;
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    justify-content: center; /* Центрує кнопки по горизонталі */
+    align-items: center; /* Центрує кнопки по вертикалі */
+}
